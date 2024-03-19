@@ -1,0 +1,17 @@
+body{
+    margin: 0px;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    padding: 50px;
+}
+
+
+.hero{
+    background-color: aqua;
+    width: 150px;
+    height: 200px;
+    padding: 50px,5px 50px 5px;
+}

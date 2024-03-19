@@ -1,0 +1,43 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.navbar .mid{
+    text-decoration: none;
+    justify-content: space-evenly;
+    color: brown;
+}
+.mid ul li{
+  list-style-type: none;
+  text-decoration: none;
+  padding: 20px;
+}
+.mid li a{
+    text-decoration: none;
+    color: brown;
+}
+  .navbar.end{
+    list-style-type: none;
+    color: brown;
+    border: 2px solid red;
+    border-radius: 40px;
+    list-style: none;
+
+
+}
+.end li a{
+    text-decoration: none;
+    color: brown;
+}

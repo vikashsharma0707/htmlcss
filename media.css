@@ -1,0 +1,32 @@
+.mediaquery{
+    background-color: red;
+    width: 100%;
+    height: 100vh;
+}
+
+
+@media(max-width:1041px){
+.mediaquery{
+    background-color: brown;
+}
+}
+
+
+
+@media(max-width:769px){
+    .mediaquery{
+        background-color:green;
+    }
+}
+
+@media(max-width:426px){
+    .mediaquery{
+        background-color:aqua;
+    }
+}
+
+@media(max-width:378px){
+    .mediaquery{
+        background-color:violet;
+    }
+}

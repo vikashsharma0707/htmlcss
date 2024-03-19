@@ -1,0 +1,97 @@
+body{
+    margin: 100px;
+    padding: 0px;
+    font-family: sans-serif;
+}
+
+.primary {
+    color: green;
+    padding: 10px;
+    font-size: 50px;
+    text-decoration: none;
+}
+.primary:visited{
+    color: brown;
+}
+ .primary:hover{
+    color: #ffffff;
+    background-color: blue;
+    border: 4px solid brown;
+    border-radius: 40px;
+ }
+
+ .primary:active{
+    color: black;
+    background-color: white;
+ }
+
+
+
+ ul li:first-child {
+    background-color: blue;
+ }
+
+ ul li:last-child{
+    background-color:brown;
+ }
+
+ ul li:nth-child(2n){
+    background-color: aqua;
+ }
+
+ h1::first-letter{
+    background-color: brown;
+    font-size: 3rem;
+ }
+
+h4::first-line{
+    color: blueviolet;
+
+}
+
+ ::selection{
+    color: red;
+    background-color: brown;
+ }
+
+
+h3::before{
+    content: 'good';
+}
+
+
+h3::after{
+    content: 'hello';
+}
+
+.required::after{
+    content: '*';
+    color: red;
+}
+
+
+
+.important::after{
+    content: 'important';
+    background-color: red;
+    color: white;
+    padding: o.2rem;
+    font-size: 0.5rem;
+    margin-left: 10px;
+    vertical-align: middle;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
