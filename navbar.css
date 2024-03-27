@@ -49,8 +49,9 @@ body {
     border: 2px solid blueviolet;
     display: flex;
     justify-content: space-evenly;
-    background-image: url(https://itemsstore.net/html/trito/img/hero/1.jpg);
+    background-image: url(.https://itemsstore.net/html/trito/img/hero/1.jpg);
     padding-top: 100px;
+
 }
 
 .hero div img {
@@ -60,7 +61,7 @@ body {
 
 .hero .hero1 {
     padding-top: 100px;
-}
+} 
 
 .hero .hero3 {
     text-decoration: none;
@@ -132,6 +133,8 @@ body {
     display: block;
 }
 
+
+
 .nav .startnav li img{
     display: none;
 }
@@ -139,3 +142,4 @@ body {
 .nav .midnav{
     display: block;
 }
+

@@ -1,0 +1,11 @@
+main{
+    border: 2px solid brown;
+    width: 25%;
+}
+
+
+section{
+    border: 2px dotted green;
+    width: 200vw;
+    height: 200vh;
+}

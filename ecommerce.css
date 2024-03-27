@@ -1,0 +1,82 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    background: #eee;
+    transition: 2s ease linear;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    align-items: center;
+    border: 2px solid black;
+    padding: 10px 14px;
+    background: #fff;
+    box-shadow: 0 0 0 0.5px  rgb(238, 14, 14);
+    
+}
+
+.logo{
+    list-style: none;
+    color: brown;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+.logo i{
+    color: aqua;
+}
+
+.mid ul {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.mid ul li{
+    justify-content: space-evenly;
+    list-style: none;
+    padding: 24px;
+    font-size: 24px;
+}
+
+
+.mid ul li a{
+    margin: 0 10px;
+    text-decoration: none;
+    justify-content: space-evenly;
+}
+
+.end  {
+    justify-content: space-evenly;
+    padding: 40px;
+    color: blue;
+    gap: 40px;
+    font-size: 40px;
+}
+
+.end  i{
+    font-size: 40px;
+gap: 24px;
+}
+
+
+ .header .icons div{
+height: 20px;
+width: 40px;
+border: 1px solid red;
+line-height: px;
+border-radius: 5px;
+background: #eee;
+color: brown;
+font-size: 25px;
+margin: 0 14px;
+margin-right: 40px;
+text-align: center;
+
+
+}

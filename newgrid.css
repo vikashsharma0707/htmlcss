@@ -1,0 +1,45 @@
+*{
+    margin: 0px;
+    padding: 0px;
+
+}
+
+
+.body{
+    margin: 0px;
+    padding: 0px;
+    background-color: brown;
+}
+
+.grid{
+    background-color: blue;
+    margin: 50px 40px 50px 24px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.grid1{
+    
+    display: grid;
+    grid-template-columns:auto auto auto;
+    gap: 500px;
+
+}
+
+.innergrid{
+    display: grid;
+    grid-template-columns: 100px minmax((100px,auto));
+}
+
+.innergrid1{
+    border: 2px solid red;
+    margin: 40px;
+    background-color:white; 
+    border-left: 4px solid aqua;
+}
+
+.innergrid1:hover{
+    backdrop-filter: aqua;
+    border-color: blueviolet;
+}
+

@@ -1,89 +1,117 @@
-*{
-    margin: 0px;
-    padding: 0px;
-    list-style: none;
-    text-decoration: none;
+* {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+  text-decoration: none;
 }
- nav{
-    height: 90px;
-    background-color: brown;
-}
-
-nav img{
-    width: 40px;
-    height: 50px;
-    position: absolute;
-    top: 18px;
-    left: 12%;
+nav {
+  height: 90px;
+  background-color: brown;
 }
 
-nav ul{
-    float: right;
-    margin-right: 25px;
-    display: flex;
+nav img {
+  width: 40px;
+  height: 50px;
+  position: absolute;
+  top: 18px;
+  left: 12%;
 }
 
-nav ul li{
-    display: flex;
-    line-height: 80px;
-    margin: 0 15px;
+nav ul {
+  float: right;
+  margin-right: 25px;
+  display: flex;
 }
 
-nav ul li a{
-    position: relative;
-    color: white;
+nav ul li {
+  display: flex;
+  line-height: 80px;
+  margin: 0 15px;
+}
+
+nav ul li a {
+  position: relative;
+  color: white;
+  font-size: 24px;
+  text-transform: uppercase;
+}
+nav .menu-btn i {
+  color: white;
+  font-size: 40px;
+  float: right;
+  cursor: pointer;
+  display: none;
+  margin-right: 100px;
+}
+
+#click {
+  display: none;
+}
+
+@media (max-width: 940px) {
+  nav ul {
+    position: fixed;
+    top: 80px;
+    left: -100%;
+    background: #111;
+    height: 100vh;
+    width: 100%;
+    display: block;
+    transition: all 0.3s ease;
+  }
+  nav ul li {
+    margin: 40px 0;
+  }
+
+  #click:checked ~ nav ul {
+    left: 0%;
+  }
+
+  nav ul li a {
     font-size: 24px;
-    text-transform: uppercase;
-}
-nav .menu-btn i{
-    color: white;
-    font-size: 40px;
-    float: right;
-    cursor: pointer;
+    display: block;
+    color: cyan;
+  }
+
+  #click:checked ~ .menu-btn i:before {
+    content: "\f00d";
+  }
+
+  #click:checked ~ ul {
+    left: 0%;
+  }
+
+  nav .menu-btn i {
+    display: block;
+    font-size: 50px;
+  }
+
+  .end {
     display: none;
-    margin-right: 50PX;
+  }
 }
 
-#click{
+/*@media(max-width:1024){
+  .navbar{
     display: none;
-}
+  }
 
-@media(max-width:940px){
-    nav ul{
-        position: fixed;
-        top:80px;
-        left: -100%;
-        height: 100vh;
-        width: 100%;
-        background-color: #111;
-        display: block;
-        text-align: center;
-        transition: all 0.3s ease;
-    }
+  #bars{
+    display: block;
+  }
 
-    #click:checked ~.menu-btn i:before{
-        content: "\f00d";
-    }
+  #check1:checked~.navbar{
+    display: block;
+  }
 
-    nav ul li{
-        margin: 40px 0;
-    }
-    nav ul li a{
-        font-size:24px ;
-        color: cyan;
-        display: block;
-        margin-left: 200px;
-    }
+  #click:checked ~ .menu-btn i:before {
+    content: "\f00d";
+  }
 
-    #click:checked~ul {
-        left: 0%;
-    }
-
-    nav .menu-btn i{
-        display: block;
-    }
-}
-
-
-
-
+  .navbar .start{
+    display: none;
+  }
+  .navbar .midnav{
+    display: block;
+  }
+}*/

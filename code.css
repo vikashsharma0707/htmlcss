@@ -1,0 +1,25 @@
+@media(max-width:376px){
+
+    .p{
+        display: block;
+    }
+    #css_grid{
+        display: grid;
+        grid-template-columns:auto;
+        margin-top: 200px;
+        margin-right: 200px;
+    }
+    .p .p1{
+        font-size: 24px;
+        margin-left: 50px;
+    }
+
+    .p .row{
+        display: block;
+    }
+
+    .p .hero3{
+        display: block;
+        margin-right: 300px;
+    }
+}

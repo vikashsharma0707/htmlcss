@@ -1,0 +1,41 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    background: aqua;
+}
+
+.main{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+
+.education{
+    display: grid;
+    grid-template-columns: auto ;
+    margin: 24px;
+    border: 8px solid red;
+    position: relative;
+    border-left: 2px solid black;
+}
+
+.row{
+    border: 2px solid blue;
+    margin: 100px;
+    width: 20;
+    height: 50%;
+    
+}
+
+.row:before{
+    content: '';
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    position: absolute;
+    background-color: black;
+    left: -5px;
+    top: -40;
+
+}
