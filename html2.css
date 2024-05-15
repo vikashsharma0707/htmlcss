@@ -6,7 +6,8 @@ body {
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
-  background-color:black;
+  background-color: black;
+  overflow-x: hidden;
 }
 
 /*============================navbar style section start============================*/
@@ -45,6 +46,7 @@ span {
   justify-content: space-evenly;
   padding: 20px;
   color: white;
+  font-size: 24px;
 }
 
 .mid a:hover {
@@ -68,82 +70,168 @@ span {
   background: red;
 }
 
-/*=========================navbar style section end============================*/
+.end a:hover {
+  color: white;
+  background-color: black;
+}
 
+#bars {
+  font-size: 24px;
+  color: white;
+  display: none;
+}
+
+/* --============================media query for navbar====================-- */
+@media (max-width: 1041px) {
+  .nav .mid {
+    background-color: brown;
+    display: none;
+    width: 50%;
+    height: 50vh;
+    padding: 20px;
+    margin-right: 100%;
+  }
+
+  .nav .mid li {
+    margin-top: 50px;
+    margin: 24px;
+  }
+  #bars {
+    display: block;
+    margin-left: 90%;
+  }
+
+  #inputbox:checked ~ .nav .mid {
+    display: block;
+    margin-top: 50px;
+    /* margin-left: 100px; */
+  }
+
+  .end {
+    display: none;
+  }
+
+  .start {
+    margin-top: -40px;
+  }
+
+  .leftside p {
+    font-size: 30px;
+  }
+}
+
+/*=========================navbar style section end============================*/
 
 /*======================hero section style start=====================*/
 
-
-.hero{
-    display: flex;
-    justify-content: space-around;
-    margin-top: 50px;
+.hero {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 50px;
 }
 
 /*=======================hero leftside==========================*/
 
-.leftside{
-  line-height: 0.8;
+.leftside {
+  line-height: 0.4;
 }
-.leftside h4{
-    color: white;
-    font-weight: 500px;
-}
-
-.leftside h1{
-    color: white;
-    padding: 10px;
+.leftside h4 {
+  color: white;
+  font-weight: 500px;
 }
 
-.leftside h2{
-    color: white;
-    padding: 10px;
-    margin-bottom: 10px;
-    font-weight: 500px;
-}
-.leftside p{
-    color: white;
-    padding: 10px;
+.leftside h1 {
+  color: white;
+  padding: 10px;
 }
 
-.leftside h3{
-    color: white;
-    padding: 10px;
+.leftside h2 {
+  color: white;
+  padding: 10px;
+  margin-bottom: 5px;
+  font-weight: 500px;
+}
+.leftside p {
+  color: white;
+  padding: 10px;
 }
 
-.load{
-    display: flex;
-    padding: 10px;
+.leftside h3 {
+  color: white;
+  padding: 10px;
+  font-size: 18px;
 }
 
-  .load  a{
-    text-decoration: none;
-    border: 2px solid red;
-    border-radius: 10px;
-    color: white;
-    margin: 18px;
-    padding: 10px 5px 10px 5px;
-    background-color: red;
+.load {
+  display: flex;
+  padding: 10px;
 }
 
+.load a {
+  text-decoration: none;
+  border: 2px solid red;
+  border-radius: 10px;
+  color: white;
+  margin: 18px;
+  padding: 10px 5px 10px 5px;
+  background-color: red;
+}
 
+.load a:hover {
+  color: white;
+  background-color: black;
+}
 
+.logo i {
+  color: white;
+  font-size: 24px;
+  margin: 18px;
+  border: 2px solid white;
+  border-radius: 50%;
+  border-color: transparent;
+}
 
-
-
-
+.logo i:hover {
+  color: black;
+  background-color: white;
+}
 
 /*============================hero section rightside=================*/
 
-.rightside img{
+.rightside img {
   width: 400px;
   height: 500px;
   margin-right: 100px;
-
 }
 
+.rightside img:hover {
+  scale: 1.1;
+  transition: 2s;
+}
 
+/* --=======================media query for hero section--============================== */
+@media (max-width: 425px) {
+  .hero {
+    display: inline-block;
+    font-size: 18px;
+    margin-left: 0px;
+  }
+  .load {
+    display: block;
+  }
+}
 
+@media (max-width: 1024px) {
+  .hero {
+    display: inline-block;
+    font-size: 24px;
+    margin-left: 0px;
+  }
+  .load {
+    margin-top: 24px;
+    display: block;
+  }
+}
 /*=======================about section start========================*/
 
 .about .heading {
@@ -182,37 +270,37 @@ span {
   transform: translate(-50%);
 }
 
-
-
-
 /*======================== about iamge section start===========================*/
 
-.mix{
+.mix {
   display: flex;
   justify-content: space-around;
   align-content: center;
 }
 
-
-.image{
+.image {
   position: relative;
   width: 300px;
   height: 400px;
 }
-.image img{
+.image img {
   width: 100%;
   height: 100%;
   position: relative;
   z-index: 2;
 }
 
+.image img:hover {
+  scale: 1.1;
+  transition: 2s;
+}
 
 .image::after {
   position: absolute;
   content: "";
   width: 60%;
   height: 80%;
-  outline: 8px solid black;
+  outline: 8px solid rgb(199, 42, 42);
   top: 70px;
   left: 70px;
   z-index: 1;
@@ -220,59 +308,47 @@ span {
   background-color: rgb(107, 103, 103);
 }
 
-
-.border{
+.border {
   line-height: 1;
   margin-top: 40px;
 }
 
-
-.border h4{
+.border h4 {
   font-size: 18px;
 }
 
-
-.border p{
- color: white;
+.border p {
+  color: white;
 }
 
-.border .name{
+.border .name {
   display: flex;
   margin: 20px;
   color: white;
 }
 
-
-@media(max-width:775){
-  .mix{
-    display: block;
+/* --=================================media query for about page--============================ */
+@media (max-width: 768px) {
+  .about .mix {
+    display: inline-block;
+    width: 100%;
     flex-direction: column;
   }
 }
 
+/*==========================service section start===============================*/
 
-
-  
-
-
-
-
-
-
-/*==========================service section strat===============================*/
-
-
-.service{
+.service {
   align-items: center;
   text-align: center;
 }
 
-.serviceheading{
+.serviceheading {
   align-items: center;
   justify-content: center;
 }
 
-.serviceheading h1{
+.serviceheading h1 {
   color: white;
   font-size: 24px;
   text-align: center;
@@ -281,7 +357,6 @@ span {
   display: inline-block;
   margin-left: 50%;
 }
-
 
 .serviceheading h1::before {
   content: "";
@@ -293,7 +368,7 @@ span {
   background-color: #808080;
 }
 
-.serviceheading h1::after{
+.serviceheading h1::after {
   content: "";
   position: absolute;
   width: 50%;
@@ -304,7 +379,7 @@ span {
   transform: translate(-50%);
 }
 
-.serviceheading h4{
+.serviceheading h4 {
   margin-left: 50%;
   font-size: 24px;
   color: white;
@@ -312,7 +387,7 @@ span {
 
 .grid {
   display: grid;
-  grid-template-columns:auto auto auto;
+  grid-template-columns: auto auto auto;
   align-items: center;
   text-align: center;
   width: 60%;
@@ -321,7 +396,7 @@ span {
   margin-left: 20%;
 }
 
-.box{
+.box {
   border: 2px solid white;
   border-radius: 10px;
   margin: 40px;
@@ -329,84 +404,71 @@ span {
   height: 70%;
   padding: 15px 10px 15px 10px;
   transition: 2s ease;
- 
 }
 
-.box:hover{
-  border: transparent;
+.box:hover {
+  scale: 1.1;
+  transition: 1s;
 }
 
-
-.box img{
+.box img {
   width: 40%;
   padding: 0px 0x 24px;
 }
 
-
-
- .box .btn {
+.box .btn {
   margin-top: 10px;
   display: inline-block;
   border: 2px solid black;
   border-radius: 10px;
-  padding:10px 5px 10px 5px;
+  padding: 10px 5px 10px 5px;
   text-decoration: none;
   background-color: red;
   color: white;
 }
 
-.box h3{
+.box h3 {
   color: white;
   font-weight: 500px;
 }
 
-.box p{
+.box p {
   color: white;
   font-weight: 500px;
 }
+/* --================media query for servive section--================================ */
 
-@media(max-width:725){
-  .grid{
+@media (max-width: 725px) {
+  .grid {
     display: block;
     grid-template-columns: auto;
-
-
-  }
-  .box{
-    display: block;
     width: 50%;
+    margin-right: 30px;
+  }
+  .box {
+    display: block;
+    width: 100%;
   }
 }
-
-
-
-
 
 /*============================experience section====================*/
 
-
-
-
-
-
-.container{
+.container {
   width: 40%;
   height: 40%;
   padding: 35px 10%;
   margin-top: 50px;
 }
 
-   .education h1{
+.education h1 {
   margin-left: 50%;
   font-size: 30px;
   color: white;
   position: relative;
   display: inline-block;
-
 }
 
 .education h1::before {
-  content: "";
   position: absolute;
   width: 100%;
   height: 1px;
@@ -415,7 +477,6 @@ span {
   background-color: #808080;
 }
 .education h1::after {
-  content: "";
   position: absolute;
   width: 50%;
   height: 3px;
@@ -425,29 +486,27 @@ span {
   transform: translate(-50%);
 }
 
-.row{
+.row {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-column-gap:20px
-
+  grid-column-gap: 20px;
 }
-.col{
+.col {
   margin-top: 50px;
 }
-.col .title{
+.col .title {
   font-family: Arial, Helvetica, sans-serif;
-  color:white;
+  color: white;
   padding: 0px 0px 15px 15px;
   font-size: 18px;
 }
 
-.col .content{
+.col .content {
   padding: 0px 25px;
   border-left: 2px solid #bababa;
-  
 }
 
-.col .content .box2{
+.col .content .box2 {
   position: relative;
   padding: 20px;
   border: 1px solid #eaeaea;
@@ -457,175 +516,200 @@ span {
   transition: all 0.4s;
   margin-bottom: 20px;
   color: #d03645;
-
-
 }
 
-.col .content .box2:hover{
-  box-shadow: 0px 3px 12px 0px  #ccc;
+.col .content .box2:hover {
+  box-shadow: 0px 3px 12px 0px #ccc;
   border: 1px solid transparent;
 }
 
-.col .content .box2::before{
-  content: '';
+/*.col .content .box2::before {
+  content: "";
   position: absolute;
   width: 10px;
   height: 10px;
   border-radius: 50%;
   right: calc(100% + 40px);
   top: 0;
-  background-color:#11a372;
+  background-color: #11a372;
   border: 2px solid white;
-}
+}*/
 
-
-@media(max-width:768px){
-   .row{
-      grid-template-columns: 1fr;
+/* --=======================media query for experience section--=========================== */
+@media (max-width: 768px) {
+  .row {
+    grid-template-columns: 1fr;
+    width: 80%;
   }
 
-  .row .col:nth-child(){
-      margin-top: 30px;
+  .row .col:nth-child() {
+    margin-top: 30px;
+  }
+
+  .box2 {
+    width: 60%;
+    height: 30vh;
   }
 }
-
 
 /*===============================contact section start==================================*/
 
-.conatct{
-  align-items: center;
-  text-align: center;
-}
 
-.contactheading h1{
-  text-align: center;
-  color: white;
-  font-size: 30px;
-  margin-top: 50px;
-}
-
-
-.contactheading h2{
-  text-align: center;
-  color: white;
-  font-size: 30px;
-  margin-top: 50px;
-}
-
-
-.form{
-  display: flex;
-  align-items: center;
-  text-align: center;
-  margin-top: 100px;
-  margin-left: 20%;
-}
-
-
-.leftform{
-  width: 30%;
-  height: 50vh;
-  background-color: #d03645;
-}
-
-
-
-
-.wrapper h1 {
-  font-size: 26px;
-  text-align: center;
-  margin-bottom: 20px;
-}
-
- .input-box {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  background: slateblue;
-  background: transparent;
-}
-.input-box .input-field {
+.contact {
   position: relative;
-  width: 50%;
-  margin: 13px 0px;
+  min-height: 100vh;
+  padding: 50px 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 50px;
 }
 
-.input-box .input-field input {
+.contact .content {
+  max-width: 800px;
+  text-align: center;
+}
+
+.contact .content2 h2 {
+  font-size: 36px;
+  font-weight: 500;
+  color: white;
+}
+
+.contact .content2 p {
+  font-weight: 300;
+  color: white;
+}
+/* --========================left section contact page========================-- */
+.container2 {
   width: 100%;
-  height: 100%;
-  background-color: transparent;
-  border: 2px solid rgba(255, 255, 255, 0.2);
-  outline: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.container2 .contactinfo {
+  width: 30%;
+  line-height: 1;
+}
+
+.container2 .contactinfo .box2 {
+  position: relative;
+  padding: px 0;
+}
+
+.container2 .contactinfo .box2 .icon i {
+  min-width: 40%;
+  height: 40%;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20%;
+  font-size: 22px;
+}
+
+.container2 .contactinfo .box2 text {
+  display: flex;
+  margin-left: 20px;
   font-size: 16px;
-  color: #fff;
-  border-radius: 6px;
-  padding: 15px 15px 15px 40px;
+  color: white;
+  flex-direction: column;
+  font-weight: 200;
 }
 
-.input-box .input-field input::placeholder {
-  color: #fff;
+.text h3 {
+  font-weight: 500;
+  color: red;
 }
 
-.input-box .input-field i {
-  position: absolute;
-  left: 15px;
-  top: 50%;
-  transform: translate(-50%);
-  font-size: 20px;
+.text P {
+  font-weight: 500;
+  color: white;
 }
 
-.wrapper label {
-  display: inline-block;
-  font-size: 14px;
-  margin: 10px 0px 23px;
+/* --=====================contact form rightside===================================-- */
+.contactform {
+  width: 15%;
+  padding: 20px;
+  background: white;
+  border: 2px solid white;
+  /* background-color: transparent; */
+  border-radius: 10px;
 }
-.wrapper .btn {
+
+.contactform h2 {
+  font-size: 30px;
+  color: brown;
+  font-weight: 400;
+}
+
+.contactform .inputbox {
+  position: relative;
   width: 100%;
-  height: 45px;
-  background: #fff;
+  margin-top: 10px;
+}
+
+.contactform .inputbox input {
+  width: 100%;
+  padding: 5px 0;
+  font-size: 16px;
+  margin: 10px 0;
   border: none;
+  border-bottom: 2px solid brown;
   outline: none;
-  border-radius: 6px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  cursor: pointer;
+}
+
+.contactform .inputbox textarea {
+  width: 100%;
+  padding: 5px 0;
   font-size: 16px;
-  color: #333;
-  font-weight: 600;
+  margin: 10px 0;
+  border: none;
+  border-bottom: 2px solid brown;
+  outline: none;
 }
 
-.wrapper label input {
-  accent-color: #fff;
-  margin-right: 5px;
+.contactform .inputbox span {
+  position: absolute;
+  left: 0;
+  padding: 5px 0;
+  font-size: 16px;
+  margin: 10px 0;
+  pointer-events: none;
+  transition: o.5s;
+  color: #666;
 }
 
+.contactbtn {
+  width: 100%;
+  border: 2px solid black;
+  border-radius: 10px;
+  margin-top: 10px;
+  color: white;
+  background-color: teal;
+}
 
-@media (max-width:576px){
-
-  .image{
-    width: 100%;
-    align-items: center;
+/* --=================media query for contact page====================-- */
+@media (max-width: 780px) {
+  .contact {
+    padding: 50px;
   }
-    .input-box .input-field{
-        width: 50%;
-        margin: 10px 5px;
-    }
-    .image{
-      display: block;
-    }
-    .wrapper{
-      width: 100%;
-      align-items: center;
-    }
+
+  .container2 {
+    flex-direction: column;
+  }
+  .container2 .contactinfo {
+    margin-bottom: 40px;
+    width: 100%;
+  }
+  .container2 .contactform {
+    margin-bottom: 40px;
+    width: 100%;
+  }
 }
 
-
-
-
-
-
-
-
-
+/* --==========================footer section start==========================-- */
 
 .footer {
   padding: 50px;
@@ -634,6 +718,7 @@ span {
   border-top-right-radius: 125px;
   height: 150px;
   margin-top: 300px;
+  background-size: cover;
   background: linear-gradient(to right, #00093c, #2d0b00);
 }
 
@@ -692,14 +777,17 @@ span {
   border: 4px solid white;
 }
 
+/* --=============================media query for footer section===============================-- */
+@media (max-width: 780px) {
+  .footer .foot {
+    display: inline-block;
+    background-size: cover;
+  }
 
-
-
-
-
-
-
-
-
-
-
+  .footer {
+    background-size: auto;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100%;
+  }
+}

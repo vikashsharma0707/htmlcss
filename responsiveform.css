@@ -109,6 +109,7 @@ body {
   top: 50%;
   transform: translate(-50%);
   font-size: 20px;
+  color: white;
 }
 
 .wrapper label {
@@ -158,3 +159,10 @@ body {
       align-items: center;
     }
 }
+
+
+
+
+
+
+

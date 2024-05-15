@@ -1,0 +1,15 @@
+
+$btn-bg-color:red;
+$btn-color:green;
+$font-size:24px;
+
+
+@mixin btn{
+    background-color: btn-bg-color;
+    color: $btn-color;
+    padding: 10px;
+}
+
+#btn{
+    @include btn;
+}

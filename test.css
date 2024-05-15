@@ -1,0 +1,67 @@
+
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: brown;
+}
+
+
+.grid{
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+.grid1 img{
+    width: 400px;
+}
+
+.grid2 h2{
+    font-size: 40px;
+    color: white;
+}
+
+.grid2 p{
+    font-size: 24px;
+    color:black;
+}
+
+.grid2 h1{
+    font-size: 10pxpx;
+    color:blue;
+}
+
+#mainbtn{
+    display: block;
+}
+
+.gridbtn1{
+    width: 200px;
+}
+
+.gridbtn1{
+    width: 200px;
+    background-color:red;
+    border-radius: 10px;
+    height: 50px;
+}
+
+
+.gridbtn1:hover{
+    color: white;
+    background-color: black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

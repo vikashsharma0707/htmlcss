@@ -102,7 +102,7 @@ body {
 
 .progress-bar {
   position: relative;
-  width: 100%;
+  width: 80%;
   height: 5px;
   background-color: #808080;
   border-radius: 15px;
@@ -120,7 +120,7 @@ body {
 
 .progress-line {
   position: absolute;
-  width: 100%;
+  width: 80%;
   height: 7px;
   background-color: #d03635;
   border-radius: 15px;
