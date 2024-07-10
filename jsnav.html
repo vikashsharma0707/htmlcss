@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Responsive Navbar</title>
-    <link rel="stylesheet" href="navbarmedia.css" />
+    <link rel="stylesheet" href="jsnav.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
@@ -16,11 +16,10 @@
   <body>
     <nav>
       <img src="html-removebg-preview.png" alt="Logo" />
-      <input type="checkbox" id="click" />
-      <label for="click" class="menu-btn">
+      <div class="menu-icon" onclick="toggleMenu()">
         <i class="fas fa-bars"></i>
-      </label>
-      <ul>
+      </div>
+      <ul id="nav-links" class="nav-links">
         <li><a href="#">Home</a></li>
         <li><a href="#">About</a></li>
         <li><a href="#">Services</a></li>
@@ -28,5 +27,7 @@
         <li><a href="#">Feedback</a></li>
       </ul>
     </nav>
+
+    <script src="jsnav.js"></script>
   </body>
 </html>
