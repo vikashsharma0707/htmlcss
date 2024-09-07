@@ -1,0 +1,17 @@
+
+
+
+
+/* body:not(.hello){
+    color: red;
+    background-color: blue;
+} */
+
+/* .hello:empty{
+    color: red;
+} */
+
+:root{
+    background-color: blue;
+    color: red;
+}
